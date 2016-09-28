@@ -17,7 +17,7 @@ for t in range(T):
         while nextplus < N and pluses[nextplus] <= query:
             nextplus += 1
             cur += 1
-        while nextminus < N and minuses[nextminus] < query:
+        while nextminus < N and minuses[nextminus] < query + 1e-6:
             nextminus += 1
             cur -= 1
         answers[i] = cur
